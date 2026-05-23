@@ -1,0 +1,277 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#f4f7fb;
+  color:#222;
+  margin: 0 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+    padding: 10px 20px;
+    border: 2px solid rgb(87, 87, 169);
+    border-radius: 0.6rem;
+}
+
+.logo{
+  color:rgb(51, 48, 48);
+  font-size:28px;
+  font-weight:700;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2); /* Starts bigger */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover{
+    transform: scale(1); /* Zooms out */
+    color: #38bdf8;
+}
+
+.social-sidebar{
+
+  position:fixed;
+
+  top:50%;
+  left:20px;
+
+  transform:translateY(-50%);
+
+  display:flex;
+  flex-direction:column;
+
+  gap:15px;
+
+  z-index:999;
+}
+
+
+.social-sidebar a{
+
+  width:50px;
+  height:50px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:#0f172a;
+  color:white;
+
+  border-radius:50%;
+
+  text-decoration:none;
+
+  font-size:20px;
+
+  transition:0.3s;
+}
+
+.social-sidebar a:hover{
+  background:#38bdf8;
+  transform:scale(1.2);
+}
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h2{
+  font-size:60px;
+  margin-bottom:20px;
+  color:#0f172a;
+}
+
+
+.hero p{
+  max-width:700px;
+  line-height:1.8;
+  margin-bottom:30px;
+  color:#555;
+}
+
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+}
+
+.btn{
+  padding:14px 30px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.primary-btn{
+  background:#0f172a;
+  color:white;
+}
+
+.primary-btn:hover{
+  background:#38bdf8;
+}
+
+.secondary-btn{
+  background:white;
+  border:2px solid #0f172a;
+}
+
+
+.secondary-btn:hover{
+  background:#0f172a;
+  color:white;
+}
+
+.card-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:100px 20px;
+}
+
+.notification-card{
+  width:320px;
+  padding:40px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.notification-icon{
+  position:relative;
+  width:80px;
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#e0f2fe;
+  border-radius:50%;
+  font-size:30px;
+  color:#0f172a;
+}
+
+.card-section{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:100px 20px;
+}
+
+
+.notification-card{
+  width:320px;
+  padding:40px;
+  background:white;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+.notification-icon{
+  position:relative;
+  width:80px;
+  height:80px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#e0f2fe;
+  border-radius:50%;
+  font-size:30px;
+  color:#0f172a;
+}
+
+
+
+
+
+/* BADGE */
+.badge{
+  position:absolute;
+  top:-5px;
+  right:-5px;
+  width:28px;
+  height:28px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:red;
+  color:white;
+  border-radius:50%;
+  font-size:14px;
+  font-weight:700;
+}
+
+
+.notification-card h2{
+  margin-top:25px;
+  margin-bottom:10px;
+  color:#0f172a;
+}
+
+.notification-card p{
+  line-height:1.7;
+  color:#666;
+}
+
+.whatsapp-btn{
+  position:fixed;
+  right:25px;
+  bottom:25px;
+  width:70px;
+  height:70px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:36px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:0.3s;
+  z-index:1000;
+}
+
+.whatsapp-btn:hover{
+  transform:scale(1.1);
+}
+
+footer{
+  padding:40px;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  margin-top:100px;
+}
